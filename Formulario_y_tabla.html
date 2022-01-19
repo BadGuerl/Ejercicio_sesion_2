@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio sesion 2</title>
+</head>
+<body>
+    <form id="formulario1" action="recibeform.html" method="post" style="border: 2px rgb(75, 174, 255) solid; border-radius: 15px; margin: 30px; padding: 30px; background-color: #dce6fc;">
+        
+        <h2>Mi formulario</h2>
+
+        <!-- FIELDSET= grupo de campos -->
+        <fieldset style="border: 2px rgb(75, 174, 255) solid; border-radius: 15px;" >
+            <legend>Datos de contacto:</legend>
+
+            <div style="margin-bottom: 15px;">
+                <p>Nombre</p>
+                <input id="nombre" name="nombre" pattern="[A-Za-z0-9]" required type="text" value="John" placeholder="Aquí tu nombre" />
+                
+                <p>Apellido</p>
+                <input id="apellido" name="apellido" pattern="[A-Za-z0-9]" required type="text" value="Snow" placeholder="Aquí tu apellido" />
+                
+                <p>Correo electrónico</p>
+                <input id="email" type="email" placeholder="Correo electronico" value="ejemplo@ejemplo.com" pattern=".+@globex\.com" required />
+
+                <p>Teléfono</p>
+                <input type="tel" required value="" placeholder="Aquí tu teléfono" name="tel" id="tel1" required />
+                   
+                <p>Dirección</p>
+                <input id="direccion" name="direccion" pattern="[A-Za-z0-9]" required type="text" value="Invernalia" placeholder="Aquí tu dirección" />
+                <input type="number" id="numero_direccion" name="número_direccion" placeholder="Número" min="1" />
+
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar formulario" />                
+            </div>
+
+        </fieldset>
+      
+    </form>
+    
+    <div style="border: 2px rgb(75, 174, 255) solid; border-radius: 15px; padding: 30px; background-color: #dce6fc; margin: 30px;">
+
+        <h2>Mi tabla</h2>
+        
+        <table class="default" border="1" >
+            
+            <tr>
+                <th>Casa</th>
+                <th>Reino</th>
+                <th>Capital</th>
+                <th>Rey</th>
+            </tr>
+
+            <tr>
+                <td>Stark</td>
+                <td>Tierras del Norte</td>
+                <td>Invernalia</td>
+                <td>Eddard «Ned» Stark</td>
+            </tr>
+
+            <tr>
+                <td>Lannister</td>
+                <td>Tierras del Oeste</td>
+                <td>Roca Casterly</td>
+                <td>Tywin Lannister</td>
+            </tr>
+            
+            <tr>
+                <td>Targaryen</td>
+                <td colspan="2">Exiliados</td>
+                <td>Aerys II Targaryen</td>
+            </tr>
+
+            <tr>
+                <td>Baratheon</td>
+                <td>Tierras de las tormentas</td>
+                <td>Bastión de Tormentas</td>
+                <td rowspan="2">Robert Baratheon</td>
+            </tr>
+
+            <tr>
+                <td>Tyrell</td>
+                <td>Tierras del Dominio</td>
+                <td>Altojardín</td>
+            </tr>
+            
+        </table>
+    </div>
+    
+</body>
+</html>
