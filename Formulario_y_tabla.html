@@ -16,21 +16,66 @@
             <legend>Datos de contacto:</legend>
 
             <div style="margin-bottom: 15px;">
-                <p>Nombre</p>
-                <input id="nombre" name="nombre" pattern="[A-Za-z0-9]" required type="text" value="John" placeholder="Aquí tu nombre" />
+                <label>Nombre</label>
+                <input
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    value="John" 
+                    placeholder="Aquí tu nombre" 
+                    pattern="[A-Za-z0-9]" 
+                    required 
+                    />
                 
-                <p>Apellido</p>
-                <input id="apellido" name="apellido" pattern="[A-Za-z0-9]" required type="text" value="Snow" placeholder="Aquí tu apellido" />
+                <label>Apellido</label>
+                <input 
+                    type="text"
+                    id="apellido" 
+                    name="apellido" 
+                    value="Snow" 
+                    placeholder="Aquí tu apellido" 
+                    pattern="[A-Za-z0-9]" 
+                    required 
+                    />
                 
-                <p>Correo electrónico</p>
-                <input id="email" type="email" placeholder="Correo electronico" value="ejemplo@ejemplo.com" pattern=".+@globex\.com" required />
+                <label>Correo electrónico</label>
+                <input  
+                    type="email"
+                    name="email"
+                    id="email" 
+                    placeholder="Correo electrónico" 
+                    value="ejemplo@ejemplo.com"
+                    pattern=".+@globex\.com" 
+                    required 
+                    />
 
-                <p>Teléfono</p>
-                <input type="tel" required value="" placeholder="Aquí tu teléfono" name="tel" id="tel1" required />
+                <label>Teléfono</label>
+                <input
+                    type="tel" 
+                    required 
+                    value="" 
+                    placeholder="Aquí tu teléfono" 
+                    name="tel" 
+                    id="tel1" 
+                    required 
+                    />
                    
-                <p>Dirección</p>
-                <input id="direccion" name="direccion" pattern="[A-Za-z0-9]" required type="text" value="Invernalia" placeholder="Aquí tu dirección" />
-                <input type="number" id="numero_direccion" name="número_direccion" placeholder="Número" min="1" />
+                <label>Dirección</label>
+                <input 
+                    id="direccion" 
+                    name="direccion" 
+                    pattern="[A-Za-z0-9]" 
+                    required type="text" 
+                    value="Invernalia" 
+                    placeholder="Aquí tu dirección" 
+                    />
+                <input
+                    type="number" 
+                    id="numero_direccion" 
+                    name="número_direccion" 
+                    placeholder="Número" 
+                    min="1" 
+                    />
 
             </div>
 
